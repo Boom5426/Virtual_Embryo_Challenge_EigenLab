@@ -20,7 +20,7 @@ contains no modelling method. Where this README and the site disagree, the site
 Python 3.10 or newer.
 
 ```bash
-git clone <this repository> vec-community-kit
+git clone https://github.com/Boom5426/Virtual_Embryo_Challenge_EigenLab.git vec-community-kit
 cd vec-community-kit
 python -m pip install -r requirements.txt     # numpy, scipy, anndata, h5py
 python -m unittest discover -s tests          # optional: 33 offline tests

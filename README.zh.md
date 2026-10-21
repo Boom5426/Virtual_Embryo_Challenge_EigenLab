@@ -238,6 +238,8 @@ python vec_board.py snapshot             # 把所有公开接口保存到带时�
 ## 10. 安装与测试
 
 ```bash
+git clone https://github.com/Boom5426/Virtual_Embryo_Challenge_EigenLab.git vec-community-kit
+cd vec-community-kit
 python -m pip install -r requirements.txt     # numpy、scipy、anndata、h5py，需要 Python 3.10 及以上
 python -m unittest discover -s tests -v       # 33 个离线测试，不联网
 ```

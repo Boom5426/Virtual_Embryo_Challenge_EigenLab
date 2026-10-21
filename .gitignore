@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+# local outputs of the tools
+vec_snapshots/
+vec_ledger.jsonl
+*.h5ad
+# never commit keys
+.vec_key
+*.key
+.env

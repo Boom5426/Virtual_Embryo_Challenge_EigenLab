@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vec-community-kit"
+version = "0.1.0"
+description = "Unofficial community tools for the Virtual Embryo Challenge: offline format checker, safe uploader, public leaderboard reader."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23", "scipy>=1.9", "anndata>=0.9", "h5py>=3.7"]
+
+[project.optional-dependencies]
+veckit = ["veckit"]
+
+[project.scripts]
+vec-check = "vec_check:main"
+vec-submit = "vec_submit:main"
+vec-board = "vec_board:main"
+
+[tool.setuptools]
+py-modules = ["vec_common", "vec_check", "vec_submit", "vec_board"]
